@@ -42,8 +42,8 @@ if __name__ == '__main__':
                 program_config[key] = vars(args)[key]
 
     print(maze_config)
-    win_size_x = maze_config['num_cols'] * maze_config['cell_size_x'] + 100
-    win_size_y = maze_config['num_rows'] * maze_config['cell_size_y'] + 100
+    win_size_x = maze_config['num_cols'] * maze_config['cell_size_x'] + maze_config['x1'] * 2
+    win_size_y = maze_config['num_rows'] * maze_config['cell_size_y'] + maze_config['y1'] * 2
     win = Window(win_size_x, win_size_y)
 
     while True:
